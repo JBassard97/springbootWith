@@ -1,4 +1,4 @@
-### Created the project with:
+## Created the project with:
 
 ```bash
 mvn archetype:generate \
