@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "postbuild": "rm -rf ../src/main/resources/static/* && mv dist/client/browser/* ../src/main/resources/static/",
+    "build": "ng build --configuration=production && rm -rf ../src/main/resources/static/* && mv dist/client/browser/* ../src/main/resources/static/ && rm -rf dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:client": "node dist/client/server/server.mjs"

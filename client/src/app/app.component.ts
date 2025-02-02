@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router'; // Import this
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, // If you're using standalone components
+  imports: [RouterModule],  // Add RouterModule here
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'client';
+  title = 'your-app';
 }
